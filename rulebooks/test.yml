@@ -8,4 +8,5 @@
     - name: Say Hello
       condition: event.i == 1
       action:
-        debug:
+        run_job_template:
+          name: ansible.eda.hello
